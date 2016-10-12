@@ -30,7 +30,7 @@ var articleOne={
     
     function createTemplate(data)
     {
-        tiltle=data.title;
+        title=data.title;
         heading=data.heading;
         date=data.date;
         content=data.content;
