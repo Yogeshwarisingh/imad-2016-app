@@ -28,7 +28,7 @@ var articleOne={
            </p>`
     };
     
-    function createtemplate(data)
+    function createTemplate(data)
     {
         tiltle=data.title;
         heading=data.heading;
