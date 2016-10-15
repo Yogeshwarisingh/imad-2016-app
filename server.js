@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 var articles = {
-    articleOne:{
+    'article-One':{
     title: "Article-one Title",
     heading: "Article-one",
     date: "Sep 5,106",
@@ -28,7 +28,7 @@ var articles = {
           The extraction process went smoothly.  I have it on my desktop ready for use.  I will let you know if I come across any issues.
            </p>`
     },
-    articleTwo:{
+    'article-two':{
     title: "Article-one Title",
     heading: "Article-one",
     date: "Sep 5,106",
@@ -46,7 +46,7 @@ var articles = {
           The extraction process went smoothly.  I have it on my desktop ready for use.  I will let you know if I come across any issues.
            </p>`
     },
-    articleThree:{
+    'article-three':{
     title: "Article-one Title",
     heading: "Article-one",
     date: "Sep 5,106",
@@ -65,6 +65,12 @@ var articles = {
            </p>`
     }
 };
+
+app.get('/articleName',function(req, res)
+{
+  res.send(createTemplate(articles(articleName)));
+});
+
     function createTemplate(data)
     {
         title=data.title;
@@ -103,21 +109,6 @@ var articles = {
     `;
     return htmlTemplate;
     }
-
-app.get('/article-one',function(req, res)
-{
-  res.send(createTemplate(articleOne));
-});
-
-app.get('/article-two',function(req, res)
-{
-   res.sendFile(path.join(__dirname, 'ui', 'Article-two.html'));
-});
-
-app.get('/article-three',function(req, res)
-{
-   res.sendFile(path.join(__dirname, 'ui', 'Article-three.html'));
-});
 
 
 app.get('/article-two',function(req, res)
