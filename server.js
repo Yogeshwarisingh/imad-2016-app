@@ -9,7 +9,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var articleOne={
+var articles={
+    var articleOne:{
     title: "Article-one Title",
     heading: "Article-one",
     date: "Sep 5,106",
@@ -26,8 +27,44 @@ var articleOne={
            <p>
           The extraction process went smoothly.  I have it on my desktop ready for use.  I will let you know if I come across any issues.
            </p>`
-    };
-    
+    },
+    var articleTwo:{
+    title: "Article-one Title",
+    heading: "Article-one",
+    date: "Sep 5,106",
+    content:  `<p>
+           The extraction process went smoothly.  I have it on my desktop ready for use.  I will let you know if I come across any issues.
+           </p>
+       </div>
+        <div>
+           <p>
+           The extraction process went smoothly.  I have it on my desktop ready for use.  I will let you know if I come across any issues.
+           </p>
+       </div>
+        <div>
+           <p>
+          The extraction process went smoothly.  I have it on my desktop ready for use.  I will let you know if I come across any issues.
+           </p>`
+    },
+    var articleThree:{
+    title: "Article-one Title",
+    heading: "Article-one",
+    date: "Sep 5,106",
+    content:  `<p>
+           The extraction process went smoothly.  I have it on my desktop ready for use.  I will let you know if I come across any issues.
+           </p>
+       </div>
+        <div>
+           <p>
+           The extraction process went smoothly.  I have it on my desktop ready for use.  I will let you know if I come across any issues.
+           </p>
+       </div>
+        <div>
+           <p>
+          The extraction process went smoothly.  I have it on my desktop ready for use.  I will let you know if I come across any issues.
+           </p>`
+    },
+};
     function createTemplate(data)
     {
         title=data.title;
