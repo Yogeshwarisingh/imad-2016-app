@@ -63,7 +63,7 @@ var articles={
            <p>
           The extraction process went smoothly.  I have it on my desktop ready for use.  I will let you know if I come across any issues.
            </p>`
-    },
+    }
 };
     function createTemplate(data)
     {
