@@ -66,9 +66,10 @@ var articles = {
     }
 };
 
-app.get('/articleName',function(req, res)
+app.get('/articleNames',function(req, res)
 {
-  res.send(createTemplate(articles(articleName)));
+    var articleNames= req.params.articleNames;
+  res.send(createTemplate(articles(articleNames)));
 });
 
     function createTemplate(data)
