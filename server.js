@@ -9,8 +9,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var articles={
-    var articleOne:{
+var articles = {
+    articleOne:{
     title: "Article-one Title",
     heading: "Article-one",
     date: "Sep 5,106",
@@ -28,7 +28,7 @@ var articles={
           The extraction process went smoothly.  I have it on my desktop ready for use.  I will let you know if I come across any issues.
            </p>`
     },
-    var articleTwo:{
+    articleTwo:{
     title: "Article-one Title",
     heading: "Article-one",
     date: "Sep 5,106",
@@ -46,7 +46,7 @@ var articles={
           The extraction process went smoothly.  I have it on my desktop ready for use.  I will let you know if I come across any issues.
            </p>`
     },
-    var articleThree:{
+    articleThree:{
     title: "Article-one Title",
     heading: "Article-one",
     date: "Sep 5,106",
